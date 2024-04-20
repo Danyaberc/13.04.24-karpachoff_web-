@@ -1,6 +1,8 @@
 body,html{
     font-family: "Open Sans", sans-serif;
-    
+    margin-right: 0px;
+    padding-right: 0px;
+     overflow-x: hidden;
 }
 
 ul,li{
@@ -325,7 +327,7 @@ a{
 }
 .content__treatment{
     display: grid;
-    grid-template-rows: 28px 30px 30px;
+    grid-template-rows: 28px 30px 1fr;
     gap: 20px;
     justify-items: flex-start;
     font-size:16px;
@@ -559,6 +561,9 @@ a{
     border-radius: 3px;
     color:#fff;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rev{
     background-color:#ffff;
@@ -592,8 +597,49 @@ a{
     margin:22px 0px 27px 0px
 }
 /* ---------ADAPTIV----------- */
+@media screen and (max-width:1110px){
+    .secblock{
+        padding:60px 0px 0px 0px;
+    }
+    
+}
 
 @media screen and (max-width:850px){
+    .main__treatment-border{
+        margin:0px auto;
+        
+    }
+    .main__discription-treatment{
+        display: grid;
+        grid-template-rows:50px 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-template-areas:  "topL topR"
+                                "btm btm";
+        
+    }
+    .no-active{
+    display: none;
+    }
+    .wrapper__content{
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper__button{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .number__article-img-first{
+        grid-area: topL;
+        justify-items: center;
+    }
+    .content__treatment{
+        grid-area: btm;
+        justify-items: center;
+        grid-template-rows: 0px;
+        gap:15px;
+    }
     .menu{
         display: none;
     }
@@ -609,13 +655,16 @@ a{
         padding-right:30px;
         font-size:34px;
     }
+    .header__content{
+        height:100%;
+    }
     .header__content-inner{
         display: grid;
         grid-template-columns: 1.3fr 1.8fr 1fr 0.5fr;
-    grid-template-rows: 60px 61px 50px 211px 63px;
+    grid-template-rows: 0.1fr 0.5fr 0.3fr 0.2fr ;
         justify-items: center;
-        padding:30px;
         align-items: center;
+        gap:15px;
         
     }
     .bar__wrapper-inner{
@@ -627,11 +676,7 @@ a{
         width: 40%;
     }
     .header__content-bar{
-        margin:0 auto;
-    }
-    .header__content-bar{
-        padding: 0px;
-        
+        width:100%;
     }
     .bar__quality-theme-inner{
         padding-left: 10px;
@@ -641,6 +686,8 @@ a{
         display: flex;
         justify-content: center;
         margin: 0px auto;
+        gap:60px;
+        padding:0px 15px 0px 15px;
     }
     .title__theme{
         font-size:20px;
