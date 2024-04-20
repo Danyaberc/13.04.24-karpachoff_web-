@@ -596,6 +596,81 @@ a{
     background-color: #fff;
     margin:22px 0px 27px 0px
 }
+/* ---------------------------- */
+
+/* ----------ANIMATION--------- */
+
+.anim:hover{
+    transition:0.5s ease;
+    color:#f8a808;
+    font-weight:700;
+}
+.anim:not(:hover){
+    transition: 0.5s ease;
+}
+.anim__icon:hover{
+    transition:0.5s ease;
+    color:#70f808;
+    font-weight:700;
+}
+.anim__icon:not(:hover){
+    transition: 0.5s ease;
+}
+.discriptions__contacts:hover{
+    transition:0.5s ease;
+    color:#f8a808;
+    
+}
+.discriptions__contacts:not(:hover){
+    transition:0.5s ease;
+    
+}
+.title__contacts:hover{
+    transition:0.5s ease;
+    color:#f8a808;
+    
+}
+.title__contacts:not(:hover){
+    transition:0.5s ease;
+    
+}
+.content__top:hover{
+    transition:0.5s ease;
+    color:#f8a808;
+}
+.content__top:not(:hover){
+    transition:0.5s ease;
+}
+.content__midl-text:hover{
+    transition:0.5s ease;
+    color:#f8a808;
+}
+.content__midl-text:not(:hover){
+    transition:0.5s ease;
+}
+.content__bottom:hover {
+    transition:0.5s ease;
+    color:#70f808;
+    font-weight:700;
+}
+.content__bottom:not(:hover){
+    transition:0.5s ease;
+
+}
+/* .header__content-title:hover{
+    transition:0.5s ease;
+    color:#d08f0c;
+}
+.header__content-title:not(:hover){
+    transition: 0.5s ease;
+}
+.header__content-discription{
+
+} */
+/* ----------------------------- */
+
+
+
 /* ---------ADAPTIV----------- */
 @media screen and (max-width:1110px){
     .secblock{
